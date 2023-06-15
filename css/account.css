@@ -5,6 +5,7 @@ body {
 
 /* sidebar */
 .sidebar {
+    position: fixed;
     height: 100vh;
     border-top-right-radius: 75px !important;
     background-color: #E5E6E7 !important;
@@ -65,3 +66,56 @@ body {
 }
 
 /* content */
+
+.main-content {
+
+    margin-left: 280px;
+  }
+
+.change{
+    width: 319px;
+    height: 44px;
+    background-color: #617A55;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.main-content{
+    padding:180px;    
+}
+
+.email{
+    margin-top: 110px;
+}
+
+.change{
+    margin-top: 55px;
+}
+
+.accnotice{
+    margin-top: 118px;
+
+}
+
+.spann{
+    width: 1176px;
+    height: 223px;
+    background-color: #f0f0f0;
+    border: 1px solid #517A55;
+}
+.namee {
+    display: flex;
+    align-items: center;
+}
+
+.link-underline-opacity-75-hover {
+    color: gray;
+    margin-left: 500px;
+}
