@@ -1,63 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="..\css\dashboard.css ">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="..\css\dashboard.css " />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Hopin</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- sidebar -->
-    <div class="sidebar d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
-        <img class="logo-sidebar" src="..\images\Logo.png" alt="">
+    <div
+      class="sidebar d-flex flex-column flex-shrink-0 p-3"
+      style="width: 280px"
+    >
+      <img class="logo-sidebar" src="..\images\Logo.png" alt="" />
 
-        <ul class="nav nav-pills flex-column mb-auto mt-1 fw-bold">
-            <li class="nav-item my-3">
-                <a href="..\html\dashboard.html" class="nav-link active d-flex align-items-center justify-content-center" aria-current="page">
-                    Dashboard
-                </a>
-            </li>
-            <li class="nav-item my-3">
-                <a href="..\html\applicants.html" class="nav-link link-dark">
-                    Applicants
-                </a>
-            </li>
-            <li class="nav-item my-3">
-                <a href="..\html\jobs.html" class="nav-link link-dark">
-                    Jobs
-                </a>
-            </li>
-            <li class="nav-item my-3">
-                <a href="..\html\account.html" class="nav-link link-dark">
-                    Account
-                </a>
-            </li>
-        </ul>
+      <ul class="nav nav-pills flex-column mb-auto mt-1 fw-bold">
+        <li class="nav-item my-3">
+          <a
+            href="..\html\dashboard.html"
+            class="nav-link active d-flex align-items-center justify-content-center"
+            aria-current="page"
+          >
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item my-3">
+          <a href="..\html\applicants.html" class="nav-link link-dark">
+            Applicants
+          </a>
+        </li>
+        <li class="nav-item my-3">
+          <a href="..\html\jobs.html" class="nav-link link-dark"> Jobs </a>
+        </li>
+        <li class="nav-item my-3">
+          <a href="..\html\account.html" class="nav-link link-dark">
+            Account
+          </a>
+        </li>
+      </ul>
 
-        <div class="custom-div row">
-            <div class="col-4 iconUser-container">
-                <img class="iconUser d-flex justify-content-center align-items-center mt-2" src="..\images\svg\icnUser.png" alt="">
-            </div>
-            <div class="col-8 d-flex justify-content-center flex-column flex-grow-1 mt-2 userDetails">
-                    <h6>Sample Name</h6>
-                    <p>Role</p>
-            </div>            
+      <div class="custom-div row">
+        <div class="col-4 iconUser-container">
+          <img
+            class="iconUser d-flex justify-content-center align-items-center mt-2"
+            src="..\images\svg\icnUser.png"
+            alt=""
+          />
         </div>
-    </div>
-    
-    <!-- content -->
+        <div
+          class="col-8 d-flex justify-content-center flex-column flex-grow-1 mt-2 userDetails"
+        >
+          <h6>Sample Name</h6>
+          <p>Role</p>
+        </div>
+      </div>
 
+      <!-- content -->
+      <div class="content">
+        <div class="d-flex flex-row">
+          <div class="bg-success">
+            <h5 class="text-white fw-bold text-center mt-2">TOTAL EMPLOYEES</h5>
+          </div>
+          <div class="bg-success">
+            <h5 class="text-white text-center fw-bold mt-2">HIRED</h5>
+          </div>
+          <div class="bg-success">
+            <h5 class="text-white text-center fw-bold mt-2">TERMINATE</h5>
+          </div>
+        </div>
+        <div class="process">
+          <div class="d-flex flex-row">
+            <div class="interviewing">
+              <h5 class="text-center fw-bold mt-2">INTERVIEWING</h5>
+              <div class="d-flex flex-row text-center m-2 justify-content-center">
+                <p>Open Position</p>
+                <p>Applicants</p>
+                <p>Candidates Added</p>
+              </div>
+            </div>
+            <div class="onboarding">
+              <h5 class="text-center fw-bold mt-2">ONBOARDING</h5>
+              <div class="d-flex flex-column text-center justify-content-center ml-4">
+                <p>Outstanding Offer</p>
+                <p>Currently Onboarding</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Donut Chart Starts here -->
+      <div class="donutChart position-absolute">
+        <div class="container">
+          <h3 class="fw-bold text-center text-muted">Type of Employees</h3>
+        <canvas id="donutChart"></canvas>
+        </div>
+        <script>
+        // Data for the donut chart
+          var data = {
+          labels: ["Full-time", "Part-time", "Temporary"],
+          datasets: [
+            {
+              data: [30, 40, 30], // Data values for each label
+              backgroundColor: ["#617A55","#A4D0A4", "#F7E1AE"], // Colors for each segment
+            },
+          ],
+        };
 
+        // Create a donut chart
+        var ctx = document.getElementById("donutChart").getContext("2d");
+        var donutChart = new Chart(ctx, {
+          type: "doughnut",
+          data: data,
+          options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+              legend: {
+                position: "bottom",
+                align: 'start',
+              },
+            },
+            animation: {
+              animateRotate: true,
+              animateScale: true,
+            },
+          },
+        });
+        </script>
+      </div>
+      <!-- Donut Chart Ends Here -->
 
-
-
-
+      <!-- Bar Graph Starts Here -->
+      <div class="barGraph position-absolute">
+        <div class="container">
+          <div class="chart-container">
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0"></script>
+        <script>
+          // Data for the bar graph
+          var labels = ['Accounting', 'Admin', 'Customer Service', 'Customer Support', 'Finance', 'HR', 'IT', 'Marketing', 'R&D', 'Sales'];
+          var data = [30, 50, 70, 40, 90, 20, 80, 60, 10, 50];
+      
+          // Create the bar graph
+          var ctx = document.getElementById('myChart').getContext('2d');
+          var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: labels,
+              datasets: [{
+                label: 'Data',
+                data: data,
+                backgroundColor: 'rgba(164, 208, 164, 1)',
+                borderColor: 'rgba(97, 122, 85, 1)',
+                borderWidth: 2
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  ticks: {
+                    stepSize: 10,
+                    max: 100
+                  }
+                }
+              }
+            }
+          });
+        </script>
+      </div>
+      <!-- Bar Graph Ends Here -->
 
     <!-- Javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    >
+  </script>
+  </body>
 </html>
