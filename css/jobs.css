@@ -5,6 +5,7 @@ body {
 
 /* sidebar */
 .sidebar {
+    position: fixed;
     height: 100vh;
     border-top-right-radius: 75px !important;
     background-color: #E5E6E7 !important;
@@ -64,3 +65,60 @@ body {
     color: #FFFFFF !important;
 }
 /* content */
+.main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+
+}
+.jo, .vac{
+    align-items: center;
+    border: solid 5px #617a55;
+    width: 30%;
+    height: 44px;
+    margin-bottom: 10px;
+}
+.jo p, .vac p{
+    margin-left: 10px;
+}
+.vac{
+    margin-right: 10px
+}
+
+.content{
+    margin-top: 25%;
+    margin-left: 10%;
+    width: 100%;
+}
+.jobs, .vacant, input, .addNew{
+   margin-bottom: 10px 
+}
+.total {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height:45px ;
+    width: 35%;
+    border:solid 5px #617a55;
+    border-radius: 20px;
+}
+table{
+    border: solid 2px;
+    text-align: center;
+}
+th {
+    width: 10%;
+}
+.custom-color {
+    background-color: #617a55;
+}
+.tablink{
+    width: 7%;
+}
+.addNew{
+    align-items: center;
+    margin-left: 10px
+}
