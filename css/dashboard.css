@@ -1,6 +1,7 @@
 
 body {
     background-color: #F8F6F4 !important;
+    overflow: hidden;
 }
 
 /* sidebar */
@@ -8,6 +9,7 @@ body {
     height: 100vh;
     border-top-right-radius: 75px !important;
     background-color: #E5E6E7 !important;
+    position: fixed;
 }
 
 .my-3 {
@@ -128,7 +130,7 @@ body {
 
 /* Bar Graph Starts Here */
 .barGraph{
-    margin-top: 31%;
+    margin-top: 30%;
     margin-left: 22%;
 }
 .chart-container{

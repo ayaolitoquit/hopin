@@ -70,7 +70,7 @@ body {
 .main-content {
 
     margin-left: 280px;
-  }
+}
 
 .change{
     width: 319px;
@@ -88,7 +88,7 @@ body {
 
 }
 .main-content{
-    padding:180px;    
+    padding:120px 90px 0 150px;    
 }
 
 .email{
