@@ -87,12 +87,12 @@ body {
 }
 
 .content{
-    margin-top: 25%;
+    margin-top: 20%;
     margin-left: 10%;
     width: 100%;
 }
 .jobs, .vacant, input, .addNew{
-   margin-bottom: 10px 
+    margin-bottom: 10px 
 }
 .total {
     display: flex;
@@ -104,6 +104,7 @@ input {
     width: 35%;
     border:solid 5px #617a55;
     border-radius: 20px;
+    max-width: 350px;
 }
 table{
     border: solid 2px;

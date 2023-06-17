@@ -103,6 +103,7 @@ h2 {
     margin-top: 4%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    max-width: 500px;
 }
 .input h5 {
     padding-left: 9px;
