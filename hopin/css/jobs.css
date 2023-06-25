@@ -1,0 +1,152 @@
+
+body {
+    background-color: #F8F6F4 !important;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    border-top-right-radius: 75px !important;
+    background-color: #E5E6E7 !important;
+}
+
+.my-3 {
+    margin: 50px 0 !important;
+}
+
+.mt-1 {
+    margin-top: 100px !important;
+}
+
+.mt-2 {
+    margin-top: 30px !important;
+}
+
+.custom-div {
+    background-color: #617A55;
+    height: 131px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    padding: 0 !important;
+}
+
+.nav-link {
+    text-align: center !important;
+    padding: 0 !important;
+    
+}
+
+.logo-sidebar {
+    width: 90px;
+    height: auto;
+    margin-top: 42px;
+    margin-left: 95px;
+}
+
+.active {
+    height: 50px !important;
+    color: #313131 !important;
+    background-color: #F8F6F4 !important;
+    border-radius: 65px 0 0 65px !important;
+    text-align: center !important;
+    margin-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.iconUser-container {
+    height: 100%;
+}
+
+.userDetails {
+    color: #FFFFFF !important;
+}
+/* content */
+.main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+        
+
+}
+.jo, .vac{
+    align-items: center;
+    border: solid 5px #617a55;
+    width: 30%;
+    height: 44px;
+    margin-bottom: 10px;
+}
+.jo p, .vac p{
+    margin-left: 10px;
+}
+.vac{
+    margin-right: 10px
+}
+
+.content{
+    margin-top: 15%;
+    margin-left: 22%;
+    width: 100%;
+}
+
+.jobs, .vacant, input, .addNew{
+    margin-bottom: 10px 
+}
+.total {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    height:45px ;
+    width: 35%;
+    border:solid 5px #617a55;
+    border-radius: 20px;
+    max-width: 350px;
+}
+
+th {
+    font-size: 16px;
+    width: 15%;
+}
+
+th:first-child {
+    width: 20%;
+}
+
+.custom-color {
+    background-color: #617a55;
+}
+.tablink{
+    width: 7%;
+}
+.addNew{
+    align-items: center;
+    margin-left: 10px
+}
+
+.tablinkk {
+    color: #617a55;
+    font-weight: bold;
+}
+
+table {
+    border: solid 2px;
+    text-align: center;
+    table-layout: fixed; /* Added to enforce fixed table layout */
+}
+
+td {
+    max-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+tr:hover {
+
+    cursor: pointer;
+}

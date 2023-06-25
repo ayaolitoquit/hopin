@@ -1,0 +1,98 @@
+
+body {
+    background-color: #F8F6F4 !important;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    border-top-right-radius: 75px !important;
+    background-color: #E5E6E7 !important;
+}
+
+.my-3 {
+    margin: 50px 0 !important;
+}
+
+.mt-1 {
+    margin-top: 100px !important;
+}
+
+.mt-2 {
+    margin-top: 30px !important;
+}
+
+.custom-div {
+    background-color: #617A55;
+    height: 131px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    padding: 0 !important;
+}
+
+.nav-link {
+    text-align: center !important;
+    padding: 0 !important;
+    
+}
+
+.logo-sidebar {
+    width: 90px;
+    height: auto;
+    margin-top: 42px;
+    margin-left: 95px;
+}
+
+.active {
+    height: 50px !important;
+    color: #313131 !important;
+    background-color: #F8F6F4 !important;
+    border-radius: 65px 0 0 65px !important;
+    text-align: center !important;
+    margin-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.iconUser-container {
+    height: 100%;
+}
+
+.userDetails {
+    color: #FFFFFF !important;
+}
+/* content */
+div.align-items-center {
+    margin-bottom: 50px
+}
+.fa-circle-check {
+    margin-left:10px;
+}
+.position-absolute {
+    padding: 8%;
+}
+.edit{
+    margin-left: 90%;
+}
+.jobdesc{
+    width: 70%;
+}
+.jobdesc .align-items-center div,
+.requi div {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.requi h2,
+.jobdesc h2 {
+    margin-bottom: 30px;
+}
+    
+.jobdesc {
+    margin-bottom: 80px;
+}
+
+
+

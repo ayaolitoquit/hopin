@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="..\css\changepass.css ">
+    <title>Hopin</title>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="sidebar d-flex flex-column flex-shrink-0 p-3" style="width: 280px;">
+        <img class="logo-sidebar" src="..\images\Logo.png" alt="">
+
+        <ul class="nav nav-pills flex-column mb-auto mt-1 fw-bold">
+            <li class="nav-item my-3">
+                <a href="..\html\dashboard.html" class="nav-link link-dark" aria-current="page">
+                Dashboard
+                </a>
+            </li>
+            <li class="nav-item my-3">
+                <a href="..\html\applicants.php" class="nav-link link-dark">
+                Applicants
+                </a>
+            </li>
+            <li class="nav-item my-3">
+                <a href="..\html\jobs.html" class="nav-link link-dark">
+                Jobs
+                </a>
+            </li>
+            <li class="nav-item my-3">
+                <a href="..\html\account.html" class="nav-link active d-flex align-items-center justify-content-center">
+                Account
+                </a>
+            </li>
+        </ul>
+
+        <div class="custom-div row">
+            <div class="col-4 iconUser-container">
+                <img class="iconUser d-flex justify-content-center align-items-center mt-2" src="..\images\svg\icnUser.png" alt="">
+            </div>
+            <div class="col-8 d-flex justify-content-center flex-column flex-grow-1 mt-2 userDetails">
+                    <h6>Sample Name</h6>
+                    <p>Role</p>
+            </div>
+                
+        </div>
+    </div>
+
+    
+    <!-- content -->
+            <section class="main container text-center">
+                <div class="acc mx-auto">
+                    <div class="accpass">
+                        <h2>Account</h2>
+                        <h5>Change password</h5>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="Email" id="emaill" placeholder="Email">
+                        <input type="text" name="oldpass" id="oldpass" placeholder="Old Password">
+                        <input type="text" name="newpass" id="newpass" placeholder="New Password">
+                        <input type="text" name="confirmpass" id="confirmpass" placeholder="Confirm Password">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-light">Update</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+</body>
+</html>
