@@ -24,6 +24,10 @@ body {
     margin-top: 30px !important;
 }
 
+.mt-3 {
+    margin-top: 10px !important;
+}
+
 .custom-div {
     background-color: #617A55;
     height: 131px;
@@ -76,13 +80,20 @@ body {
     padding: 0px;
 }
 .content div{
-    margin-left: 10px;
+    margin-left: 20px;
     padding: 0px;
     border-radius: 50px;
     margin-bottom: 10px;
 }
+.job-openings-container {
+    margin-left: 0 !important;
+}
+
+.job-openings-container div{
+    margin: 0;
+}
 .bg-success{
-    width: 270px;
+    width: 260px;
     height: 192px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
@@ -92,14 +103,31 @@ body {
     font-size: 50px;
 }
 
-.interviewing{
-    width: 850px;
+.recent-applications{
+    width: 820px;
     border: #617A55 solid;
     background-color: none !important;
+    overflow: hidden;
+    padding: 10px !important;
 }
-.interviewing h5{
+.recent-applications h5{
     color: #617A55;
 }
+
+tr {
+    border-bottom: 1px solid black;
+}
+
+tbody tr:last-child {
+    border: none;
+}
+
+td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 500px;
+}
+
 .job-opening{
     height: 400px;
     margin-top: -205px;
@@ -107,13 +135,22 @@ body {
     width: 250px;
 }
 .job-opening p{
-    margin-bottom: 70px !important;
-    margin-left: 7px;
+    /* margin-bottom: 70px !important; */
+    margin: 0 auto 5px auto;
     color: #617A55;
     font-weight: bold;
     text-align: center;
     border: #617A55 solid;
+
 }
+
+.job-openings-overview {
+    height: 60px;
+    /* border: 1px solid black; */
+    font-size: 40px;
+    /* color:  #617A55; */
+}
+
 .process{
     margin-left: 0px !important;
     justify-content: center;
