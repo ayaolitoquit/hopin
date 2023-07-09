@@ -1,0 +1,182 @@
+
+body {
+    background-color: #F8F6F4 !important;
+}
+
+/* sidebar */
+.sidebar {
+    position:fixed;
+    height: 100vh;
+    border-top-right-radius: 75px !important;
+    background-color: #E5E6E7 !important;
+}
+
+.my-3 {
+    margin: 50px 0 !important;
+}
+
+.mt-1 {
+    margin-top: 100px !important;
+}
+
+.mt-2 {
+    margin-top: 30px !important;
+}
+
+.custom-div {
+    background-color: #617A55;
+    height: 131px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    padding: 0 !important;
+}
+
+.nav-link {
+    text-align: center !important;
+    padding: 0 !important;
+    
+}
+
+.logo-sidebar {
+    width: 90px;
+    height: auto;
+    margin-top: 42px;
+    margin-left: 95px;
+}
+
+.active {
+    height: 50px !important;
+    color: #313131 !important;
+    background-color: #F8F6F4 !important;
+    border-radius: 65px 0 0 65px !important;
+    text-align: center !important;
+    margin-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.iconUser-container {
+    height: 100%;
+}
+
+.userDetails {
+    color: #FFFFFF !important;
+}
+/* content */
+.profile img {
+    border: solid 5px #313131;
+}
+
+.profile{
+    align-content: center;
+    width: 40%;
+}
+.profile img{
+    width: 135px;
+    height: 135px;
+}
+
+.status, .current, .skills, .exp, .fields{
+    border: solid 5px #617a55;
+    margin: 15px;
+    border-radius: 20px;
+}
+.status, .current{
+    color: white;
+    background-color: #617a55;
+    text-align: center;
+    width: 25%
+}
+.main {
+    margin-left: 22%;
+    padding-bottom: 100px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20%;
+    /* height: 100vh; */
+}
+.headd {
+    /* margin-top: 5%; */
+    margin-left: 20%;
+    margin-right: 25.5%;
+    width: 80%;
+}
+.name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+}
+
+.profile,
+.status,
+.current,
+.name {
+    width: 25%;
+}
+.status,
+.current {
+    height: auto;
+    width: 225px;
+    font-size: 14px;
+
+}
+
+.status h2, .status p,
+.current h2, .current p{
+    font-size: 20px !important;
+}
+
+.current {
+    margin-right: 0;
+}
+
+.skills,
+.exp {
+    margin-right:50px ;
+    color: #617a55;
+    width: 60%;
+
+}
+.skills {
+    margin-top: 30px;
+    height: 265px;
+}
+.exp {
+    margin-top: 21px;
+    height: 235px;
+}
+
+.fields {
+    color: #617a55;
+    position: absolute;
+    height: 73%;
+    top: 150px;
+    right: 30px;
+    bottom: 151px;
+    width: 20%;
+}
+.back {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.lower-details {
+    margin-top: 5%;
+    width: 70%;
+}
+
+.lower-details > div >div{
+    width: 100%;
+}
+.lower-details span {
+    font-size: 25px;
+}
